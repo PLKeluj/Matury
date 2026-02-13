@@ -1,0 +1,24 @@
+zadanie 7.1
+Miesiąc	Liczba przyjezdnych
+styczeń	15226
+luty	13394
+marzec	15096
+kwiecień	15292
+maj	15723
+czerwiec	14880
+lipiec	16378
+sierpień	14778
+wrzesień	14294
+październik	15637
+listopad	15272
+grudzień	15528
+
+
+zadanie 7.2
+Pierwszy raz powyżej 11000: 16.10.2023
+Najwięcej: 27.10.2023
+
+zadanie 7.3
+a) 20.02.2023
+b) 19 dni
+c) 291 butelek

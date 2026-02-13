@@ -1,0 +1,10 @@
+zadanie 4.1
+395
+(komputerów)
+
+zadanie 4.2
+3 436
+(runda 3, nr pakietu 436)
+
+zadanie 4.3
+6 8 15 20
