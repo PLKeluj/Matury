@@ -1,29 +1,24 @@
-plik = open('dron.txt', 'r')
+plik = open('dron.txt')
+
 ruchy = []
-
 for i in plik:
-    ruchy.append((i.strip()).split(' '))
+    i = i.strip()
+    ruchy.append(i.split(' '))
 
-def NWD(a, b):
-    if b == 0:
-        return a
-    else:
-        while a != b:
-            if a > b:
-                a = a - b
-            else:
-                b = b - a
-        return a
+
+def nwd(a, b):
+    a, b = max(a, b), min(a, b)
+    while b > 0:
+        a, b = b, a%b
+
+    return a
 
 
 wynik = 0
-
-for ruch in ruchy:
-    wysokosc = int(ruch[1])
-    if int(ruch[1]) <= 0 :
-        wysokosc = -int(ruch[1])
-    nwd = NWD(int(ruch[0]), wysokosc)
-    if nwd > 1:
+for i in ruchy:
+    a = abs(int(i[0]))
+    b = abs(int(i[1]))
+    if nwd(a, b) > 1:
         wynik += 1
 
 print(wynik)
